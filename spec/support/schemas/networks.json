@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from mocked response",
+  "type": "object",
+  "required": [
+    "twitter",
+    "facebook",
+    "instagram"
+  ],
+  "properties": {
+    "twitter": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "username",
+          "tweet"
+        ],
+        "properties": {
+          "username": {
+            "type": "string"
+          },
+          "tweet": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "facebook": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "instagram": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "username",
+          "picture"
+        ],
+        "properties": {
+          "username": {
+            "type": "string"
+          },
+          "picture": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
