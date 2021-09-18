@@ -7,7 +7,11 @@
 - clone the repo
 - execute `bundle install`
 - execute `rails s`
-- from another console execute `curl http://localhost:3000` 
+- from another console execute `curl http://localhost:3000`
+
+### Parallel execution
+
+A parallel execution with threads it's available at `/parallel` , in order to execute it run `curl http://localhost:3000/parallel`
 
 ## Configuration
 

@@ -12,4 +12,15 @@ RSpec.describe "Networks", type: :request do
     end
     
   end
+
+  describe "GET /parallel" do
+
+    it "returns 200" do
+      allow_any_instance_of(ParallelNetworksReaderService).to receive(:call) { MockedData::NETWORKS }
+      get "/parallel"
+      expect(response).to have_http_status(:success)
+      expect(response).to match_response_schema("networks")
+    end
+
+  end
 end
