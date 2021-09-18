@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version 3.0.0
 
-Things you may want to cover:
+## Deployment instructions
 
-* Ruby version
+- clone the repo
+- execute `bundle install`
+- execute `rails s`
+- from another console execute `curl http://localhost:3000` 
 
-* System dependencies
+## Configuration
 
-* Configuration
+You can modify the timeout variable for API calls in app/services/client_api_service.rb in order to stop waiting for the response
+```
+TIMEOUT = 2
+```
 
-* Database creation
+## How to run the test suite
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rspec .
+```
